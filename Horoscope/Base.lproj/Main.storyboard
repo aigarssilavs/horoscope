@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="neA-rQ-ho4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Horoscope View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="horoscopeViewController" id="BYZ-38-t0r" customClass="HoroscopeViewController" customModule="Horoscope" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Vt-ogF">
+                                <rect key="frame" x="12" y="60.5" width="351" height="606.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Vqf-YR-3ra">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1s-yB-Q6X">
+                                <rect key="frame" x="16" y="36" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fBd-Vt-ogF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FN2-Jf-l46"/>
+                            <constraint firstItem="Vqf-YR-3ra" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ie7-1a-iFn"/>
+                            <constraint firstItem="Vqf-YR-3ra" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KQe-Nu-moI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G1s-yB-Q6X" secondAttribute="trailing" constant="16" id="Qb0-fq-L03"/>
+                            <constraint firstItem="G1s-yB-Q6X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Rdk-SG-xEe"/>
+                            <constraint firstItem="fBd-Vt-ogF" firstAttribute="top" secondItem="G1s-yB-Q6X" secondAttribute="bottom" constant="4" id="UDj-oa-8du"/>
+                            <constraint firstItem="fBd-Vt-ogF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="VSi-zE-aDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fBd-Vt-ogF" secondAttribute="trailing" constant="12" id="XxV-hE-1IC"/>
+                            <constraint firstItem="G1s-yB-Q6X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xft-dJ-jzl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Vqf-YR-3ra" id="pQi-By-6Z3"/>
+                        <outlet property="dateLabel" destination="G1s-yB-Q6X" id="K8N-u3-VYB"/>
+                        <outlet property="horoscopeTextView" destination="fBd-Vt-ogF" id="ctD-gZ-aAT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1301.5999999999999" y="207.34632683658174"/>
+        </scene>
+        <!--Horoscopes-->
+        <scene sceneID="fpc-UJ-dy3">
+            <objects>
+                <tableViewController id="AQ6-jY-nPX" customClass="HoroscopesTableViewController" customModule="Horoscope" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Daf-LK-YjE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="AQ6-jY-nPX" id="D45-3K-7Ei"/>
+                            <outlet property="delegate" destination="AQ6-jY-nPX" id="eT1-ec-Uea"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Horoscopes" id="TFi-ki-tj9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRV-hg-fB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="209"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WtF-gS-ElG">
+            <objects>
+                <navigationController id="neA-rQ-ho4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="63i-0f-H2S">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AQ6-jY-nPX" kind="relationship" relationship="rootViewController" id="E6b-Ld-cxu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYr-ac-HGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510" y="209"/>
+        </scene>
+    </scenes>
+</document>
